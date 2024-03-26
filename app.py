@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__,template_folder='template')
 
 cv = pickle.load(open("model/cv.pkl", 'rb'))
-clfpip = pickle.load(open("model/clf.pkl", 'rb'))
+clf= pickle.load(open("model/clf.pkl", 'rb'))
 
 
 @app.route("/")
